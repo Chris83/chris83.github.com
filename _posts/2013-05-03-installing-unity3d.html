@@ -1,0 +1,105 @@
+---
+layout: default
+blog: true
+title: About Me and This Blog
+---
+
+<article class='ten columns offset-by-four' id="article-content">
+  <header class="ten columns" id="article-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <div class='ten columns gray' id="date-header">
+    <p>
+      {{ page.date | date: "%b %Y" }}
+  {% if page.updated_at %}
+      revised {{ page.updated_at }}
+  {% endif %}
+    </p>
+
+  </div>
+
+  <div class="ten columns" id="article-content">
+    <p>
+      <a href="http://unity3d.com/">Unity3D</a> is a game development engine. It can be used to create both 3D and 2D games. Best of all they have a free version! You can script in Javascript, Boo or C#. I will be using C#. The large online community helps when you have a question.
+    </p>
+
+    <h3>Step 1:</h3>
+    <img src="https://farm8.staticflickr.com/7325/13903981299_ce31bbc4a5_o.png">
+    <p>
+      First we will need to download the newest version <a href="http://unity3d.com/unity/download">here</a>. Which happens to be 4.3.4 at the time of this post.
+    </p>
+
+    <h3>Step 2:</h3>
+    <img src="https://farm3.staticflickr.com/2911/14090600455_3253e34338_o.png">
+    <p>
+      Make sure you save it to a location you can easily find. I typically save installation files directly to my desktop.
+    </p>
+
+    <h3>Step 3:</h3>
+    <img src="https://farm6.staticflickr.com/5569/13904013690_002fdab4d3_o.png">
+    <p>
+      Once the download is finished it’s time to run the installer. Go to where you saved the installer.
+    </p>
+
+    <h3>Step 4:</h3>
+    <img src="https://farm6.staticflickr.com/5115/14090600565_8a9ed03bcf_o.png">
+    <p>
+      The first screen is the installer’s welcome screen. We just need to hit next.
+    </p>
+
+    <h3>Step 5:</h3>
+    <img src="https://farm8.staticflickr.com/7317/14091062474_c2a4ea3020_o.png">
+    <p>
+      Now we the the license agreement screen. I know people don't always read these, but I recommend reading every agreement you come across. If you do agree, click the highlighted button to continue the installation.
+    </p>
+
+    <h3>Step 6:</h3>
+    <img src="https://farm3.staticflickr.com/2916/13904017918_e7405e1485_o.png">
+    <p>
+      Time to choose what you want installed. I like to install all my options, so I’ve checked them all here. After you know what you want to install click next
+    </p>
+
+    <h3>Step 7:</h3>
+    <img src="https://farm3.staticflickr.com/2896/14087396721_20049c8e61_o.png">
+    <p>
+      Now you can tell Unity3D where to install. I just went ahead with the default option. Just have to click install.
+    </p>
+
+    <h3>Step 8:</h3>
+    <img src="https://farm6.staticflickr.com/5595/13904017898_d9c0efc42d_o.png">
+    <p>
+      We’re all done! If you want to run Unity3D when you’re finished just keep the checkbox marked.
+    </p>
+
+    <p>
+      Next: Installing Krita (Coming soon!)
+    </p>
+
+    <p>
+      Previous: <a href="http://www.christopherodette.com/about-me-and-this-blog/">About Me and This Blog</a>
+    </p>
+  </div>
+
+  <div class="ten columns" id="disqus-area">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '83odie'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+
+  <footer class="ten columns">
+    <p id='follow'>
+      You should follow me on Twitter <a href="http://twitter.com/83Odie" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Post Twitter']);">here.</a>
+    </p>
+  </footer>
+</article>
