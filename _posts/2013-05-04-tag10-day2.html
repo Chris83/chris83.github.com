@@ -1,0 +1,96 @@
+---
+layout: default
+blog: true
+title: TAG10 Jam - Day 2 
+---
+
+<article class='ten columns offset-by-four' id="article-content">
+  <header class="ten columns" id="article-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <div class='ten columns gray' id="date-header">
+    <p>
+      {{ page.date | date: "%b %Y" }}
+  {% if page.updated_at %}
+      revised {{ page.updated_at }}
+  {% endif %}
+    </p>
+
+  </div>
+
+  <div class="ten columns" id="article-content">
+    <h3>Summary of May 3rd, 9:00AM to 5:00PM EST (11.5 hours total)</h3>
+    <p>
+      Finished the art for the game. Well almost, Unity did some funny stuff to my sprite sheet when I imported it. I think it can be fixed by changing the format of the image before importing it. Also it might have to do with the size of the image. It’s currently 512x512 and I think unity needs 1024x1024, so I will look into that as well.
+    </p>
+
+    <p>
+      I spent a lot more time on the art then I would have liked. Towards the animations I really skimped on quality, but I really want to get to programming. Oh I feel that my bird bath I drew kicks ass.
+    </p>
+
+    <p>
+      I also went digging on the internet for some <a href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400011">background music</a> and found one that fits the mood perfectly hopefully I can use it for this game jam. I also found a <a href="http://www.soundjay.com/failure-sound-effect.html">buzzer</a> sound to play when a mom finds one of your friends sneaking past her yard.
+    </p>
+
+    <p>
+      I did cut back on the number of obstructions kids can hide behind from eight to six so save some time. Towards the end I will add them back in if there will be enough time. I also skipped animating the characters walking in four directions in favor of a simple idle animation where all they do is swing their arms back and forth. I have also cu drawing the sides of the house for the leftmost boundary, I will just have a fence there for now. Again if there is time towards the end I will add the houses in.
+    </p>
+
+    <p>
+      I’ve settled on having the user click a square next to the active kid to move them. After each kid’s turn the mother in the yard will take her turn to move before the next kid get’s their turn. This will go on until the mom catches a kid or all the kids make it to the gate at the far side of the yard.
+    </p>
+
+    <p>
+      Initially I want the player to choose three friends to sneak to the tree house. I may add the option to choose between three and six friends and increase the number of yards based on the number of friends.
+    </p>
+
+    <p>
+      At first there will be six yards for the kids to sneak past. I think two per friend will work out. The yards will be hard coded at first to get the game playable right away. Eventually I would like the yards to be procedurally generated to add some randomness and increase the replayability of the game.
+    </p>
+
+    <p>
+      My plan of attack for tomorrow will be to create the six yards and start on the movement system for the kids. If I can finish those two parts I will then work on getting the mom to patrol her yard and spot the kids.
+    </p>
+
+    <h3>Summary of May 3rd, 8:00PM to 11:00PM EST (14.5 hours total)</h3>
+    <p>
+      Finished the art for the game. Well almost, Unity did some funny stuff to my sprite sheet when I imported it. I think it can be fixed by changing the format of the image before importing it. Also it might have to do with the size of the image. It’s currently 512x512 and I think unity needs 1024x1024, so I will look into that as well. 
+    </p>
+
+    <p>
+      <strong>Bonus:</strong> Screenshot of the first two yards done.
+      <a href="http://imgur.com/EpfUd3F" title="#TAG10 Forget Timmy!"><img src="http://i.imgur.com/EpfUd3F.png?1" title="Hosted by imgur.com" alt="#TAG10 Forget Timmy!"/></a>
+    </p>
+
+    <p>
+      Next: Day 3 (Coming Soon!)
+    </p>
+
+    <p>
+      Previous: <a href="http://www.christopherodette.com/tag10-day1/">Day 1</a>
+    </p>
+  </div>
+
+  <div class="ten columns" id="disqus-area">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '83odie'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+
+  <footer class="ten columns">
+    <p id='follow'>
+      You should follow me on Twitter <a href="http://twitter.com/83Odie" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Post Twitter']);">here.</a>
+    </p>
+  </footer>
+</article>
