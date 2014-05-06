@@ -1,0 +1,74 @@
+---
+layout: default
+blog: true
+title: TAG10 Jam - Day 4
+---
+
+<article class='ten columns offset-by-four' id="article-content">
+  <header class="ten columns" id="article-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <div class='ten columns gray' id="date-header">
+    <p>
+      {{ page.date | date: "%b %Y" }}
+  {% if page.updated_at %}
+      revised {{ page.updated_at }}
+  {% endif %}
+    </p>
+
+  </div>
+
+  <div class="ten columns" id="article-content">
+    <h3>May 5th, 11:45AM to 6:00PM EST (29.50 hours)</h3>
+    <p>
+      Wow, so I had a problem after I got rid of my game objects with their collision and switched to the map data to handle collisions. I was using my two dimensional array with [x,y]. I found out I needed to use [y,x]. This caused some weird issues where I would walk where I shouldn’t have been able to and vise versa. I spent so much time debugging the code to check if the area of a map was walkable I never thought to check what part of the array I was actually checking against. I figured this out when I decided to set the width and height of the map data array and got an error when I initialized it as a new int[28, 52] instead of a new int[52, 28]. Another problem I had to fix was the data was backwards. Reversing the array solved that issue and was much easier for me to notice that the previous problem.
+    </p>
+
+    <p>
+      Alright, so I got the moms patrolling their yards. At first I’d have the play use up all of a friends moves them move all of the moms once. This was way too easy because the kids could cover more ground per turn. The moms were not patrolling fast enough and were easy to avoid.
+    </p>
+
+    <p>
+      First attempt at fixing this was to have the moms move twice on their turns. This was still too easy so I increased this to three. This left made moms with short patrols make the rounds too fast.
+    </p>
+
+    <p>
+      Second attempt is the option I went with. After each move a kid makes all the moms move once. This gives the moms the same amount of moves as the kids regardless if the player chooses two fat friends or two skinny friends. I am leaving the option to set the number of moves each mom can take after each kid’s move.
+    </p>
+
+    <p>
+      So I built a web player version of what I have done so far. Feel free to check it out <a href="https://googledrive.com/host/0BxZZUhRd2Bv9NE1kTWtXN1NvRlE/Build.html">here</a>.
+    </p>
+
+    <p>
+      Next: Day 5 (Coming Soon!)
+    </p>
+
+    <p>
+      Previous: <a href="http://www.christopherodette.com/tag10-day3/">Day 3</a>
+    </p>
+  </div>
+
+  <div class="ten columns" id="disqus-area">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '83odie'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+
+  <footer class="ten columns">
+    <p id='follow'>
+      You should follow me on Twitter <a href="http://twitter.com/83Odie" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Post Twitter']);">here.</a>
+    </p>
+  </footer>
+</article>
