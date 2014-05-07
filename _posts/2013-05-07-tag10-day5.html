@@ -1,0 +1,67 @@
+---
+layout: default
+blog: true
+title: TAG10 Jam - Day 5 
+---
+
+<article class='ten columns offset-by-four' id="article-content">
+  <header class="ten columns" id="article-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <div class='ten columns gray' id="date-header">
+    <p>
+      {{ page.date | date: "%b %Y" }}
+  {% if page.updated_at %}
+      revised {{ page.updated_at }}
+  {% endif %}
+    </p>
+
+  </div>
+
+  <div class="ten columns" id="article-content">
+    <h3>May 6th, 9:45AM to 1:00PM EST (32.75 hours total)</h3>
+    <p>
+      I have the kid detection in place. Finding a kid in range of a mom was easy, testing if there was any obstructions hiding the kid from the mom was harder. I had to take a couple hours and work on something else and then come back before I got it working correctly. You even lose control of the kid that gets found.
+    </p>
+
+    <p>
+      I redrew the grill sprite and I am very happy with it, especially compared to the original iteration. See for yourself.
+    </p>
+    <img src="http://i.imgur.com/v7zSIro.png" title="Hosted by imgur.com"/>
+
+    <p>
+     The loss condition is programmed so my goal for tomorrow is the win condition and picking your friends at the start of the game. The the only things left to do is finish fixing the art and add UI for controls, score, and when a mom catches a kid. Overwall was a short day but I’m happy with what I got done.
+    </p>
+
+    <p>
+      Next: Day 6 (Coming Soon!)
+    </p>
+
+    <p>
+      Previous: <a href="http://www.christopherodette.com/tag10-day4/">Day 4</a>
+    </p>
+  </div>
+
+  <div class="ten columns" id="disqus-area">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '83odie'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+
+  <footer class="ten columns">
+    <p id='follow'>
+      You should follow me on Twitter <a href="http://twitter.com/83Odie" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Post Twitter']);">here.</a>
+    </p>
+  </footer>
+</article>
