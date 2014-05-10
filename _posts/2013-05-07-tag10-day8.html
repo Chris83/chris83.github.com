@@ -1,0 +1,70 @@
+---
+layout: default
+blog: true
+title: TAG10 Jam - Day 8 
+---
+
+<article class='ten columns offset-by-four' id="article-content">
+  <header class="ten columns" id="article-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <div class='ten columns gray' id="date-header">
+    <p>
+      {{ page.date | date: "%b %Y" }}
+  {% if page.updated_at %}
+      revised {{ page.updated_at }}
+  {% endif %}
+    </p>
+
+  </div>
+
+  <div class="ten columns" id="article-content">
+    <h3>May 9th, 1:00PM to 8:00PM EST (49.75 hours total)</h3>
+    <p>
+      Updated my flamingo and dog house sprites. Still putting off doing the picnic table, even though its the last obstruction I have to update. I just don’t know how to draw it in the ¾ perspective and still have it take up the same amount of space. I have also added two chat bubbles for then a mom catches a kid. The chat bubble for the moms has a picture of broccoli on it. The chat bubble for the kids has a sad face with some tears streaming down the cheeks.
+    </p>
+
+    <p>
+      I also added in a garbage collector to store kids that are caught and moms that are no longer patrolling. The garbage gets cleaned up at the start of a new game and the moms go back on patrol. I had a small problem at first where the moms would also get destroyed at the start of a new game. It turned out I added them to the garbage when they found a kid for some reason.
+    </p>
+
+    <p>
+     It didn’t feel like I got much done today, mostly because I’m slow with art. I have improved since starting this jam, even if it’s only a little bit. My small picture of broccoli looks like broccoli to me. That is an accomplishment!
+    </p>
+
+    <p>
+      Only two more days and there is still so much more I want to do with this game. I want to have the characters actually turn and face the direction they move. I want to convert the mom’s detection from a radius to a frontal cone. I still have to calculate and display the score when a player wins. I want to display the number of steps taken by the play win or lose. I would really like to randomly generate the yards and number of moms per yard and their patrols.
+    </p>
+
+    <p>
+      Next: Day 9 (Coming Soon!)
+    </p>
+
+    <p>
+      Previous: <a href="http://www.christopherodette.com/tag10-day7/">Day 7</a>
+    </p>
+  </div>
+
+  <div class="ten columns" id="disqus-area">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '83odie'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+
+  <footer class="ten columns">
+    <p id='follow'>
+      You should follow me on Twitter <a href="http://twitter.com/83Odie" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Post Twitter']);">here.</a>
+    </p>
+  </footer>
+</article>
