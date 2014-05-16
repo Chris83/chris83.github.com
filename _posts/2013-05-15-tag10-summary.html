@@ -1,0 +1,66 @@
+---
+layout: default
+blog: true
+title: TAG10 Jam - Summary 
+---
+
+<article class='ten columns offset-by-four' id="article-content">
+  <header class="ten columns" id="article-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <div class='ten columns gray' id="date-header">
+    <p>
+      {{ page.date | date: "%b %Y" }}
+  {% if page.updated_at %}
+      revised {{ page.updated_at }}
+  {% endif %}
+    </p>
+
+  </div>
+
+  <div class="ten columns" id="article-content">
+    <h3>My First Game Jam Is Over</h3>
+    <p>
+      Well something good happened and something bad happened. The bad is I spaced the last couple days and the submission deadline. The good news is I spaced those thing because some much needed work came my way. This is also the reason for the delay between this post and my last post.
+    </p>
+
+    <p>
+      All in all I didn't get to put all of the finishing touches into my game. I am working on it slowly, even now. An hour here maybe thirty minutes there. Eventually I will have a finished game under my belt that was a tutorial. I enjoyed keeping a dev diary and will plan to post future updates here about Forget Timmy! I haven't made any significant progress as of date to warrant another updated version to play. The biggest addition since my last update is the characters now face in the direction they last moved. The next feature I am working on is converting the detection on the moms from a radius to a frontal cone.
+    </p>
+
+    <p>
+      I plan on doing the TAGJam again in the near future. my current work project should be finished in time for the TAGJam after this next one that should be starting some time soon in the beginning of June. Everyone involved with TAGJam was friendly and I hope to jam with them again in the future. I highly recommend participating in a game jam. I have learned more about game development than I have just tinkering around on my own hobby projects.
+    </p>
+
+    <p>
+      Thanks for following along with me on this experience! If you missed the beginning you can find my dev diary entry for day one <a href="http://www.christopherodette.com/tag10-day1/">here</a>.
+    </p>
+
+    <p>
+      Previous: <a href="http://www.christopherodette.com/tag10-day8/">Day 8</a>
+    </p>
+  </div>
+
+  <div class="ten columns" id="disqus-area">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '83odie'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+
+  <footer class="ten columns">
+    <p id='follow'>
+      You should follow me on Twitter <a href="http://twitter.com/83Odie" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Post Twitter']);">here.</a>
+    </p>
+  </footer>
+</article>
